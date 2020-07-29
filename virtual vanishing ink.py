@@ -46,7 +46,7 @@ if __name__ == "__main__":
 		mask=cv2.cvtColor(temp,cv2.COLOR_BGR2HSV)
 		mask=cv2.inRange(mask,np.array([1,THRESHOLD_SAT,THRESHOLD_VAL]),np.array([255,255,255]))# Set threshold to avoid digital stain
 		
-		#temp=cv2.addWeighted(frame,VANISHING_SPEED,temp,1-VANISHING_SPEED,0) # Comment this line to get virtual ink
+		temp=cv2.addWeighted(frame,VANISHING_SPEED,temp,1-VANISHING_SPEED,0) # Comment this line to get virtual ink
 		
 		
 		temp=cv2.bitwise_and(temp,temp,mask=mask)
