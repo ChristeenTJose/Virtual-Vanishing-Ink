@@ -9,3 +9,5 @@
 
 ---
 ## Note:
+* caliberation.py is a handbuilt python module
+* You need to execute only "virtual vanishing ink.py"
